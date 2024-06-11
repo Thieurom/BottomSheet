@@ -224,8 +224,8 @@ internal extension BottomSheetView {
     
     // For closing the sheet
     func closeSheet() {
-        self.bottomSheetPosition = .hidden
         self.endEditing()
+        self.bottomSheetPosition = .hidden
         
         self.configuration.onDismiss()
     }
